@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>AlphaVer Modathon</title>
+</head>
+<body onfocus="typeWriter()">
+	<div class="theme">
+		<p div="theme-text"> The theme is: </p>
+		<h2 div="theme-text" id="typewrita"> </h2>
+	</div>
+	<main class="content">
+		<div id="rules">
+			<h1>Context</h1>
+			<p>Welcome to the first ever AlphaVer Modathon! An event where many modders or even newbies have to make a visual, source-edited mod based off of <i>Lilypad QA</i> in 48 hours.</p>
+			<h2>Rules</h2>
+			<p>The rules are quite simple: </p>
+			<br>
+			<ul>
+				<li>You are given 48 hours to create a <i>Lilypad QA</i> mod with a set theme.</li>
+				<li>You must follow the given theme, no strays. Or infinite dash mods v2.</li>
+
+				<li>Everyone is set into random teams, if you dont pair up with who you want to, blame the randomizer.</li>
+				<li>You cannot base your mod off of another mod such as <i>Rosepad</i> or even as Basic as <i>LPUJ</i>.</li>
+				<li>VCS *must* be used</li>
+				<li>You mustn't plagarise others work (as in directly stealing or copying other ideas without putting your own creative take on it).</li>
+				<li>All entries must be submitted before the 48 hour deadline.</li>
+				<li>Have fun i guess, if you dont then we will shoot you.</li>
+			</ul>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div id="modding">
+			<h1>Modding Basics</h1>
+			<p>Here are the basic tools required to mod <i>Lilypad QA</i>!</p>
+			<h2>Tools</h2>
+			<br>
+			<ul>
+				<li><b>RetroMCP</b> for decompilation. (preferably, pre3)</li>
+				<li>A java IDE such as <strong>Eclipse</strong> for coding the mod.</li>
+				<li><o>Recaf</o> in order to change the name of a singular file (very cool).</li>
+				<li>A paint tool such as <u>Paint.net</u> for changing textures.</li>
+				<li>Its not a tool or a requirement, but even a miniscule amount of programming experience.</li>
+			</ul>
+			<br>
+			<h2>Getting started</h2>
+				<p>Now that you hopefully have these tools in hand, its time to start. But how?</p>
+				<p>First of all, open <b>RetroMCP</b>. if you are using pre3, these next steps should be simple to follow:</p>
+				<br>
+				<ul>
+					<li>Make a new folder in your computer and copy its address. Go to MCP > Change working directory and paste your folder path in.</li>
+					<li>Now, go to the "Current Versions" Selectable on the right, scroll down untill you find "a1.1.0". Select this option and wait for <b>RetroMCP</b> to do its job, this shouldnt take long.</li>
+					<li>You will now realize that the "Decompile" button has lit up, but dont click it yet! You need to install the <i>Lilypad QA</i> jar first.</li>
+					<li>After installing <i>Lilypad QA</i>, fire up <O>Recaf</O> and open the jar. Change the name of the file <q>BlockButton.java</q> to <q>LilypadBlockButton.java</q>. Export these changes.</li>
+					<li>With your newly changed jar file. Open the folder in which you opened RetroMCP, find the jars folder, delete <q>minecraft.jar</q>, replace it with the <i>Lilypad QA</i> one and rename it back to minecraft.jar. You are now free to hit <q>Decompile</q> in <b>RetroMCP</b>. Follow the steps it tells you such as deleting <q>BlockMinecartTrack</q></li>
+				</ul>
+				<p>Oh but. Whats this? <b>RetroMCP</b> has thrown us another error? This time for an IOException that has to be caught. Fairly simple solution. Go to <q>ClassX.java</q> in the src folder. Go to line 75 and paste in a <q>throws IOException</q> at the end of the function name. However, before you keep on going and press Build. One more thing needs to be done. </p>
+				<br>
+				<p>go to "\src\minecraft\net\minecraft\client" and open Minecraft.java. Go to line 140, the one right after the fullscreen line, write "InputHandler.mc = this". Your game will no longer crash after dashing or encountering a naturally spawning giant.</p>
+				<br>
+				<p>One more thing though. If you wish to modify or add your own textures to game, extract them from the jar file directly via the use of 7zip or other archiving software. Put the new textures in <q>\src\minecraft</q> with their respective folder names. If you wish to edit terrain.png for example, you dont make a new folder and put it in there. But if you want to edit the items, you make a folder called gui and put it in there.</p>
+				<br>
+				<h2>For <strong>Eclipse</strong> users!</h2>
+				<br>
+				<p>In the folder where youve decompiled lilypad, you will find a "workspace" folder. Launch eclipse and open this folder. Dont make a new eclipse project or anything, as it will sort itself on its own. Once opened, you can press the green play button on the top to debug the game.</p>
+				<br>
+				<p>If you want to add new textures to the game, you have to build with <b>RetroMCP</b></p>
+				<br>
+				<h2>Important Files</h2>
+				<br>
+				<ul>
+					<li>GuiIngame : Lets you alter anything seen ingame (more specifically, when playing on a world)</li>
+					<li>GuiSelectWorld : Gui for world selection</li>
+					<li>ChunkProviderGenerate : Lets you change any naturally generating block or flower and add your own</li>
+					<li>NoiseGeneratorPerlin : Lets you mess with the worlds chunk generation</li>
+					<li>GuiIngameMenu : The GUI for the esc menu</li>
+					<li>GameSettings : Lets you change and add options.</li>
+				</ul>
+				<br>
+				<br>
+				<h2>Hope you enjoy your time!</h2>
+		</div>
+	</main>
+	
+</body>
+<script src="typewriter.js"></script>
+</html>

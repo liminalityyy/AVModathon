@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Overpass+Mono&family=Share+Tech+Mono&display=swap');
+
+* {
+	background-color: #0e0e0e;
+	color: white;
+	margin: 0;
+	font-family: 'JetBrains Mono', monospace;
+	overflow-x: hidden;
+}
+
+html { 
+ 	height: 100%;
+}
+
+.container {
+	background-color: transparent;
+}
+
+.content {
+	margin: 5px;
+	width: 80%;
+}
+
+h1, h2, p {	
+	margin-top: 10px;
+}
+
+i {
+	background: #35ca53;
+	background: -webkit-linear-gradient(to right, #35ca53, #669980); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #35ca53, #669980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: .3s color;
+}
+
+h1, h2 {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+li { 
+	list-style-image: url(img/iphone.png); 
+	font-family: 'Overpass Mono', monospace;
+} 
+
+hr {
+	border: 0; 
+	background-color: rgba(255,255,255,0.3);
+	height: 1px; 
+}
+
+b {
+	background: #f2ff00;
+	background: -webkit-linear-gradient(to right, #f2ff00, #ff0000); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f2ff00, #ff0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: .3s color;
+}
+
+strong {
+	background: #485fb7; 
+	background: -webkit-linear-gradient(to right, #485fb7, #f79709); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #485fb7, #f79709); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: .3s color;
+}
+
+u {
+	background: #485fb7; 
+	background: -webkit-linear-gradient(to right, #ffffff, #bdfff5); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffffff, #bdfff5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: .3s color;
+}
+
+o {
+	background: #485fb7; 
+	background: -webkit-linear-gradient(to right, #1745fd, #001a40); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1745fd, #001a40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: .3s color;
+}
+
+.theme {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10em;
+	padding-bottom: 10em;
+	font-size: 30px;
+	background: rgb(77,3,146);
+	background: linear-gradient(180deg, rgba(77,3,146,1) 0%, rgba(56,23,165,1) 50%, rgba(14,14,14,1) 100%); 
+}
