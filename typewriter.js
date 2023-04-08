@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'To Be Revealed';
+var txt = 'S P A C E';
 var speed = 50; 
 
 function typeWriter() {
