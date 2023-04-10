@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'S P A C E';
+var txt = 'You were too late :(';
 var speed = 50; 
 
 function typeWriter() {
